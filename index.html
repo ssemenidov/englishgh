@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English</title>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header hidden">
+      <div class="header-name name">Имя</div>
+    </header>
+    <section class="preview show">
+      <div class="preview-slider">
+        <div class="preview-slide">
+          <div class="container">
+            <div class="preview-slide-content">
+              <img class="preview-img" src="img/preview1.png" alt="preview1" />
+              <div class="preview-text">
+                Выучить английские слова за <span>15</span> минут? С нами
+                <span>просто</span>!
+              </div>
+              <div class="preview-btns">
+                <button class="preview-next">продолжить</button>
+                <button class="preview-end">пропустить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-slide">
+          <div class="container">
+            <div class="preview-slide-content">
+              <img class="preview-img" src="img/preview2.png" alt="preview2" />
+              <div class="preview-text">
+                Это <span>лучшее</span> приложение, потому что
+                <span>БЕСПЛАТНОЕ</span>. Мы за доступность!
+              </div>
+              <div class="preview-btns">
+                <button class="button preview-next">продолжить</button>
+                <button class="preview-end">пропустить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="preview-slide">
+          <div class="container">
+            <div class="preview-slide-content">
+              <img class="preview-img" src="img/preview3.png" alt="preview3" />
+              <div class="preview-text">
+                Бери и <span>изучай</span>! Начни <span>сегодня</span>!
+              </div>
+              <div class="preview-btns">
+                <button class="preview-next">продолжить</button>
+                <button class="preview-end">пропустить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="test hidden">
+      <div class="container container--main">
+        <ul class="test-section red hidden"></ul>
+        <ul class="test-section green hidden"></ul>
+        <ul class="test-section blue hidden"></ul>
+      </div>
+    </section>
+    <section class="main hidden">
+      <div class="container container--main">
+        <div class="main-content">
+          <ul class="main-section-titles"></ul>
+          <ul class="main-section red hidden"></ul>
+          <ul class="main-section green hidden"></ul>
+          <ul class="main-section blue hidden"></ul>
+        </div>
+      </div>
+    </section>
+    <section class="profile hidden">
+      <div class="container container--main">
+        <div class="profile-content">
+          <input
+            type="text"
+            class="profile-input name"
+            maxlength="512"
+            value="Имя"
+            onfocus="this.value=''"
+          />
+          <button class="profile-btn">Ок</button>
+        </div>
+      </div>
+    </section>
+    <footer class="footer hidden">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <button class="footer-btn" id="test">
+            <img class="hidden-fast" src="img/test-active.svg" alt="test" />
+            <img class="show-fast" src="img/test.svg" alt="test" />
+
+            <div class="footer-title">тест</div>
+          </button>
+        </li>
+        <li class="footer-item">
+          <button href="#" class="footer-btn footer-active" id="home">
+            <img class="show-fast" src="img/home-active.svg" alt="home" />
+            <img class="hidden-fast" src="img/home.svg" alt="home" />
+            <div class="footer-title">главная</div>
+          </button>
+        </li>
+        <li class="footer-item">
+          <button class="footer-btn" id="profile">
+            <img
+              class="hidden-fast"
+              src="img/profile-active.svg"
+              alt="profile"
+            />
+            <img class="show-fast" src="img/profile.svg" alt="profile" />
+            <div class="footer-title">профиль</div>
+          </button>
+        </li>
+      </ul>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

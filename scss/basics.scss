@@ -1,0 +1,74 @@
+@import "vars.scss";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  //max-width: 425px;
+  height: 100vh;
+
+  margin: auto auto;
+  font-family: Arial, sans-serif;
+  background: $weat;
+}
+button {
+  border: none;
+  color: inherit;
+  background: none;
+}
+:focus {
+  outline: none;
+}
+li,
+ul {
+  list-style: none;
+}
+
+.show {
+  z-index: 10 !important;
+  animation: show 0.5s ease-in-out forwards;
+}
+.hidden {
+  opacity: 0 !important;
+  display: none !important;
+  animation: hidden 0.5s ease-in-out forwards;
+}
+.show-fast {
+  z-index: 10 !important;
+  animation: show forwards;
+}
+.hidden-fast {
+  opacity: 0 !important;
+  display: none !important;
+  animation: hidden forwards;
+}
+.container {
+  margin: 0 auto;
+  width: 85%;
+  height: inherit;
+  max-width: 500px;
+}
+.container--main {
+  max-width: 500px;
+  padding: 13vh 0;
+  box-sizing: border-box;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes hidden {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
